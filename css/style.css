@@ -23,6 +23,7 @@
 	a:hover {
 			font-weight: normal;
 			color: green;
+			cursor: pointer;
 			transition: all 0.2s ease-in-out;
 		}
 	a:visited {

@@ -79,6 +79,7 @@
 		float: left;
 		width: 400px;
 		margin-top: 4px;
+		margin-bottom: 35px;
 		padding-right: 10px;
 		font-weight: normal;
 	}
@@ -106,6 +107,7 @@
 		float: left;
 		width: 400px;
 		margin-top: 0;
+		margin-bottom: 35px;
 		padding-right: 10px;
 		font-weight: normal;
 	}
@@ -161,6 +163,7 @@
 		float: left;
 		width: 400px;
 		margin-top: 0;
+		margin-bottom: 35px;
 		color: black;
 		font-weight: normal;
 	}

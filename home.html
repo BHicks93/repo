@@ -11,56 +11,80 @@
 	<link href='http://fonts.googleapis.com/css?family=Roboto+Mono:400,700,100' rel='stylesheet' type='text/css'>
 
 	<link rel="shortcut icon" href="favicon.ico">
-	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+	<script type="text/javascript" src="js/script.js"></script>
 </head>
 
 <body>
 	<div id="container">
-		<div id="bio">
-			<h1><span>Select works by</span> <div class="hicks">Brian Hicks.</div></h1>
+		<div id="one">
+			<h1><span>Select works by</span> <div class="hicks"><a href="#">Brian Hicks.</a></div></h1>
 		</div>
 
-		<div id="details">
-			<h3><span>Print</span>
-			<br><a href="http://" target="_blank">Rio de Janeiro</a>
-			<br><a href="http://" target="_blank">Blend Tool</a>
-			<br><a href="http://" target="_blank">Nike &amp; Lissitzky</a>
-			<br><a href="http://" target="_blank">Posters</a>
-			<br><a href="http://" target="_blank">Calvino Compositions</a>
-			<br>
-			<br>
-			<br><span>Web</span>
-			<br><a href="http://" target="_blank">Synergy Thinking</a>
-			<br><a href="http://" target="_blank"> Breed Bunnies</a>
-			<br><a href="http://" target="_blank">Clinton Emails</a>
-			<br><a href="http://" target="_blank">Risd.gd</a>
-			<br>
-			<br>
-			<br><span>Mobile</span>
-			<br><a href="http://urmston.xyz/buy/" target="_blank">Buy</a>
-			<br><a href="http://dump.brian.gd/" target="_blank">Dump</a>
-			<br>
-			<br>
-			<br><span>Happenings</span>
-			<br><a href="http://" target="_blank">Filthy Riser</a>
-			<br><a href="https://" target="_blank">Senior Open Studio</a>
-			<br><a href="http://" target="_blank">Holiday Party</a>
+		<div class="hide" id="rioImg"><img src="imgs/rio.jpg"></div>
+		<div class="hide" id="blendImg"><img src="imgs/blend.jpg"></div>
+		<div class="hide" id="nikeImg"><img src="imgs/nike.jpg"></div>
+		<div class="hide" id="posterImg"><img src="imgs/poster.jpg"></div>
+		<div class="hide" id="calvinoImg"><img src="imgs/calvino.jpg"></div>
+		<div class="hide" id="risdgdImg"><img src="imgs/risdgd.jpg"></div>
+		<div class="hide" id="synergyImg"><img src="imgs/synergy.jpg"></div>
+		<div class="hide" id="bunniesImg"><img src="imgs/bunnies.jpg"></div>
+		<div class="hide" id="clintonImg"><img src="imgs/clinton.jpg"></div>
+		<div class="hide" id="transitImg"><img src="imgs/transit.jpg"></div>
+		<div class="hide" id="buyImg"><img src="imgs/buy.jpg"></div>
+		<div class="hide" id="dumpImg"><img src="imgs/dump.jpg"></div>
+		<div class="hide" id="filthyImg"><img src="imgs/filthy.jpg"></div>
+		<div class="hide" id="openstudioImg"><img src="imgs/openstudio.jpg"></div>
+		<div class="hide" id="holidayImg"><img src="imgs/holiday.jpg"></div>
+		
+
+		<div id="two">
+			<div class="bodytext">
+				<span class="bgAnimation">Print</span>
+				<br><a class="rio" >Rio de Janeiro</a>
+				<br><a class="blend" >Blend Tool</a>
+				<br><a class="nike" >Nike &amp; Lissitzky</a>
+				<br><a class="poster" >Posters</a>
+				<br><a class="calvino" >Calvino Compositions</a>
+				<br>
+				<br>
+				<br><span>Web</span>
+				<br><a class="risdgd" href="http://risd.gd">Risd.gd</a>
+				<br><a class="synergy" href="http://synergy.rocks">Synergy Thinking</a>
+				<br><a class="bunnies" href="http://breedbunnies.brian.gd">Breed Bunnies</a>
+				<br><a class="clinton" href="http://hillary.brian.gd">Clinton Emails</a>
+				<br><a class="transit" href="http://bhicks93.github.io/transit/">Transit St</a>
+				<br>
+				<br>
+				<br><span>Mobile</span>
+				<br><a class="buy" href="http://urmston.xyz/buy/" target="_blank">Buy</a>
+				<br><a class="dump" href="http://dump.brian.gd/" target="_blank">Dump</a>
+				<br>
+				<br>
+				<br><span>Happenings</span>
+				<br><a class="filthy" href="http://filthyriser.com/" target="_blank">Filthy Riser</a>
+				<br><a class="openstudio" href="https://www.facebook.com/events/645911852195353/" target="_blank">Senior Open Studio</a>
+				<br><a class="holiday" href="https://www.facebook.com/events/1516909935232287/" target="_blank">Holiday Party</a>
+			</div>
 		</div>
 
-		<div id="links">
-			<h3><span>Education</span>
-			<br>Rhode Island School of Design<br>BFA, Graphic Design 2016
-			<br>
-			<br><br>
-			<span>Contact</span>
-			<br><a href="mailto:bhicks@risd.edu">Mail</a>
-			<br><a href="resume.pdf">Resume</a><br><br>
-			<br>
-			<span>Elsewhere</span>
-			<br><a href="https://twitter.com/brian_gd" target="_blank">Twitter</a>
-			<br><a href="http://blog.brian.gd/" target="_blank">Tumblr</a>
-			<br><a href="http://instagram.com/brian.gd" target="_blank">Instagram</a>
-			<br><a href="http://www.linkedin.com/in/brianmhicks" target="_blank">LinkedIn</a></h3>
+		<div id="three">
+			<div class="bodytext">
+				<span>Education</span>
+				<br>Rhode Island School of Design<br>BFA, Graphic Design 2016
+				<br>
+				<br><br>
+				<span>Contact</span>
+				<br><a href="mailto:bhicks@risd.edu">Mail</a>
+				<br><a href="resume.pdf">Resume</a><br><br>
+				<br>
+				<span>Elsewhere</span>
+				<br><a href="https://twitter.com/brian_gd" target="_blank">Twitter</a>
+				<br><a href="http://blog.brian.gd/" target="_blank">Tumblr</a>
+				<br><a href="http://instagram.com/brian.gd" target="_blank">Instagram</a>
+				<br><a href="http://www.linkedin.com/in/brianmhicks" target="_blank">LinkedIn</a>
+			</div>
 		</div>
 	</div>
 	<div class="footer">

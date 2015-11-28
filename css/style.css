@@ -1,9 +1,10 @@
 	body {
-		background-color: white;
+		background-color: black;
 		margin: 0;
 		padding: 0;
 		font-family: 'Amethysta', Times, serif;
 		font-weight: normal;
+		color:#fff;
 		text-align: left;
 		text-rendering: optimizeLegibility;
 		font-feature-settings: "kern";
@@ -18,7 +19,7 @@
 
 	a {
 		text-decoration: none;
-		color: black;
+		color: white;
 	}
 	a:hover {
 			font-weight: normal;
@@ -26,17 +27,17 @@
 			transition: all 0.2s ease-in-out;
 		}
 	a:visited {
-			color: black;
+			color: white;
 		}
 
 	::-moz-selection { /* Code for Firefox */
 	    color: #fff; 
-	    background: pink;
+	    background: black;
 	}
 
 	::selection {
 	    color: #fff; 
-	    background: pink;
+	    background: black;
 	}
 
 	h1 {
@@ -48,13 +49,13 @@
 		font-weight: normal;
 		line-height: 55px;
 		word-spacing: -4px;
-		color: black;
+		color: #fff;
 		padding-right: 20px;
 	}
 
 		h1 a {
 			text-decoration: none;
-			color: black;
+			color: #fff;
 		}
 
 			h1 a:hover {
@@ -69,7 +70,7 @@
 		clear: both;
 		z-index: 5;
 		width: 100%;
-		margin-top: 300px;
+		margin-top: 0px;
 		margin-bottom: 160px;
 		padding: 0px;
 		font-weight: normal;
@@ -162,7 +163,7 @@
 			line-height: 53px;
 			word-spacing: -4px;
 			/*letter-spacing: .01em;*/
-			color: black;
+			color: white;
 		}
 
 		#one h3 {
@@ -174,7 +175,7 @@
 
 	#two {
 		float: left;
-		width: 400px;
+		width: 100%;
 		margin-top: 0;
 		margin-bottom: 35px;
 		padding-right: 10px;
@@ -197,11 +198,18 @@
 		margin: 20px;
 		font-size: 28px;
 		line-height: 32px;
-		color: black;
+		color: white;
 		font-weight: normal;
-		border-top: 1px solid black;
+		float:left;
+		/*border-top: 1px solid black;*/
 	}
-
+	.bodytext a{
+		float:left;
+		height: 200px;
+		width: 200px;
+		background-color: transparent;
+		border-right: 1px solid white; 
+	}
 
 	h4 {
 		margin: 500px 0px 0px 20px;
@@ -241,8 +249,8 @@
 		font-family: 'Roboto Mono', Helvetica, sans-serif;
 		font-weight: 700;
 		width: 100%;
-		margin-bottom: 10px;
-		color: black;
+		color: white;
+		margin:14px 0px 17px 17px;
 		/*float: left;
 		margin-left: 18px;
 		clear:both;
@@ -269,8 +277,8 @@
 		font-weight: normal;
 		line-height: 40px;
 		letter-spacing: 1px;
-		color: white;
-		background: black;
+		color: black;
+		background: white;
 		padding:5px;
 	}
 

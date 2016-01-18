@@ -1,0 +1,223 @@
+/* Black Home */
+
+.container {
+    background: #070707;
+    color: #B9B0FF;
+}
+.container {
+    color: #FFF;
+}
+.container {
+    background: linear-gradient(0deg, #47b8ff, #fffd6c, #ff603b, #876cff, #ffdf47, #fd6cff);
+    background-size: 1200% 1200%;
+    -webkit-animation: DeviceGradient 120s ease infinite;
+    -o-animation: DeviceGradient 120s ease infinite;
+    animation: DeviceGradient 120s ease infinite;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.container {
+    background: #FFF;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.container {
+    background: #FFF;
+}
+.container {
+    background: #292B2C;
+}
+.container {
+    background: linear-gradient(0deg, #47b8ff, #fffd6c, #ff603b, #876cff, #ffdf47, #fd6cff);
+    background-size: 1200% 1200%;
+    -webkit-animation: DeviceGradient 120s ease infinite;
+    -o-animation: DeviceGradient 120s ease infinite;
+    animation: DeviceGradient 120s ease infinite;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.container {
+    -webkit-filter: invert(1);
+    -moz-filter: invert(1);
+    -o-filter: invert(1);
+    filter: invert(1);
+}
+/* Black Home Projects */
+
+.container {
+    background: #000;
+}
+.container {
+    background: transparent;
+    background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, .3) 0%, rgba(0, 0, 0, .8) 75%);
+    background-image: -moz-linear-gradient(top, rgba(0, 0, 0, .3) 0%, rgba(0, 0, 0, .8) 75%);
+    background-image: -o-linear-gradient(top, rgba(0, 0, 0, .3) 0%, rgba(0, 0, 0, .8) 75%);
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, .3) 0%, rgba(0, 0, 0, .8) 75%);
+}
+.container {
+    background: url(../img/logo-dark.png);
+    background-image: url(../img/logo-dark.svg), none;
+    background-size: contain;
+}
+/* Black Animated Backgrounds */
+
+.container {
+    /*background: linear-gradient(0deg, #47b8ff, #fffd6c, #ff603b, #876cff, #ffdf47, #fd6cff);*/
+    
+    background-image: -webkit-linear-gradient(0deg, #47b8ff, #fffd6c, #ff603b, #876cff, #ffdf47, #fd6cff);
+    background-image: -moz-linear-gradient(0deg, #47b8ff, #fffd6c, #ff603b, #876cff, #ffdf47, #fd6cff);
+    background-image: -o-linear-gradient(0deg, #47b8ff, #fffd6c, #ff603b, #876cff, #ffdf47, #fd6cff);
+    background-image: linear-gradient(0deg, #47b8ff, #fffd6c, #ff603b, #876cff, #ffdf47, #fd6cff);
+    background-size: 1200% 1200%;
+    -webkit-animation: DeviceGradient 120s ease infinite;
+    -moz-animation: DeviceGradient 120s ease infinite;
+    -o-animation: DeviceGradient 120s ease infinite;
+    animation: DeviceGradient 120s ease infinite;
+}
+@-webkit-keyframes DeviceGradient {
+    0% {
+        background-position: 50% 0%
+    }
+    50% {
+        background-position: 50% 100%
+    }
+    100% {
+        background-position: 50% 0%
+    }
+}
+@-moz-keyframes DeviceGradient {
+    0% {
+        background-position: 50% 0%
+    }
+    50% {
+        background-position: 50% 100%
+    }
+    100% {
+        background-position: 50% 0%
+    }
+}
+@-o-keyframes DeviceGradient {
+    0% {
+        background-position: 50% 0%
+    }
+    50% {
+        background-position: 50% 100%
+    }
+    100% {
+        background-position: 50% 0%
+    }
+}
+@keyframes DeviceGradient {
+    0% {
+        background-position: 50% 0%
+    }
+    50% {
+        background-position: 50% 100%
+    }
+    100% {
+        background-position: 50% 0%
+    }
+}
+/* Black Single Project */
+
+.container {
+    background: #000;
+}
+.container {
+    background: #292B2C;
+    color: #000;
+}
+.container {
+    background: #070707;
+    color: #FFF;
+}
+.black-side .project-meta h4 {
+    color: #292B2C;
+}
+.black-side .project-meta ul li a {
+    color: #FFF;
+}
+.black-side .project-meta ul li a:before {
+    background: #FFF;
+}
+.black-side .project-meta a:hover {
+    color: #FFF;
+}
+.black-side .projects-nav-item {
+    background: #292B2C;
+}
+.black-side .projects-nav-item .projects-nav-item-txt::before {
+    background: #292B2C;
+    background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, .8) 75%);
+    background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, .8) 75%);
+    background-image: -o-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, .8) 75%);
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, .8) 75%);
+}
+.black-side .projects-nav-item.next .projects-nav-item-txt::before {
+    background: #292B2C;
+    background-image: -webkit-linear-gradient(bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, .8) 75%);
+    background-image: -moz-linear-gradient(bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, .8) 75%);
+    background-image: -o-linear-gradient(bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, .8) 75%);
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, .8) 75%);
+}
+/* Black Studio */
+
+.black-side .studio a {
+    color: #FFF;
+}
+.black-side .studio a:before {
+    background: #FFF;
+}
+.black-side .skills {
+    color: #000;
+    background: #191A1A;
+}
+.black-side .skills h1, .black-side .skills h2, .black-side .skills h3, .black-side .skills h4 {
+    color: #000;
+}
+.black-side .world {
+    background: #000;
+    color: #333;
+}
+.black-side .world h1, .black-side .world h2, .black-side .world h3, .black-side .world h4 {
+    color: #333;
+}
+.black-side .skills h3, .black-side .world h3 {
+    background-image: -webkit-linear-gradient(0deg, #47b8ff, #fffd6c, #ff603b, #876cff, #ffdf47, #fd6cff);
+    background-image: -o-linear-gradient(0deg, #47b8ff, #fffd6c, #ff603b, #876cff, #ffdf47, #fd6cff);
+    color: #B9B0FF;
+    background-size: 1200% 1200%;
+    -webkit-animation: DeviceGradient 120s ease infinite;
+    -o-animation: DeviceGradient 120s ease infinite;
+    animation: DeviceGradient 120s ease infinite;
+    -webkit-background-clip: text;
+    -o-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -o-text-fill-color: transparent;
+    text-fill-color: transparent;
+}
+/* Black Footer */
+
+.black-side .main-footer p, .black-side .main-footer ul, .black-side .main-footer a {
+    color: #000;
+}
+.black-side .main-footer a:before {
+    background: #000;
+}
+.black-side .main-footer h3 {
+    color: #333;
+}
+.black-side .main-footer a.logo-footer {
+    background: url(../img/logo-dark.png) no-repeat;
+    background-image: url(../img/logo-dark.svg), none;
+    background-size: contain;
+}
+.black-side .copyright-wrap {
+    color: #000;
+}
+/* Black Side Corners */
+
+.black-side #top, .black-side #bottom, .black-side #left, .black-side #right {
+    background: #000;
+}

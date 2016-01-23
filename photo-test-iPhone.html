@@ -1,19 +1,5 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="UTF-8">
-    <title>Image Test</title>
-
-    <link rel='stylesheet prefetch' href='http://photoswipe.s3.amazonaws.com/pswp/dist/photoswipe.css'>
-    <link rel='stylesheet prefetch' href='http://photoswipe.s3.amazonaws.com/pswp/dist/default-skin/default-skin.css'>
-    <link rel="stylesheet" href="css/photo-style.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
-    
-    
-  </head>
-
-  <body>
-  <div class="width-container">
+ <!-- Gallery for iphone -->
+    <!--
     <div class="gallery-container">
       <div class="my-gallery" itemscope itemtype="http://schema.org/ImageGallery">
 
@@ -270,92 +256,42 @@
         </figure>
       </div>
     </div>
+    -->
 
-    <div class="discription-type" id="project1"> Description of project on Hover. This project was about so and so. It was really cool so believe me. This type is also dope am I right? What happens if I write a lot and it goes past the height of the page? </div>
-
-    <div id="footer">
-      <div id="footer-left">
-        <div id="footer-name">Brian Hicks</div>
-        <div id="footer-social">
-          <a href="https://www.instagram.com/brian.gd/">Instagram</a> / 
-          <a href="https://twitter.com/brian_gd">Twitter</a> / 
-          <a href="https://www.linkedin.com/in/brianmhicks">Linkedin</a>
-        </div>
+    <div class="discription-type" id="project1"> 
+      <div class="preview">
+        <div class="project-title" id="first-title">Nike &amp; El Lissitzky: </div>
+        <img class="imgHeader" src="imgs/placeholder2.png"/>
       </div>
-      <div id="footer-right">
-        <div id="footer-right-content">Site made in 2016</div>
+      <div class="extended">
+        This booklet relates El Lissitzky to the contemporary design of Nike Sneakers.
+        <img class="imgLeft" src="imgs/placeholder.png"/>
+        Both Lissitzky and Nike have pushed their fields into a new realm.
+        With his Proun series, Lissitzky worked to create a new art for the post-revolutionary world through the use of space and architectural form.
+        Nike continues to questioned what exactly is a sneaker. 
+        <img class="imgRight" src="imgs/placeholder.png"/>
+        Under their reign, sneakers have gone from something only professional athletes wear, to something commonly worn by all, to an art object, to collectible item. 
+        <img class="imgLeft" src="imgs/placeholder.png"/>
+        Their Air Jordan line has caught the attention of millions of people across the globe creating a underground market of buying and selling. 
+        <!--Could be better to just load next project-->
+        <a id="link-next-project" href="next project"> &rarr;</a>
       </div>
     </div>
-  </div>
-
-
-<!-- Root element of PhotoSwipe. Must have class pswp. -->
-<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
-
-    <!-- Background of PhotoSwipe. 
-         It's a separate element, as animating opacity is faster than rgba(). -->
-    <div class="pswp__bg"></div>
-
-    <!-- Slides wrapper with overflow:hidden. -->
-    <div class="pswp__scroll-wrap">
-
-        <!-- Container that holds slides. PhotoSwipe keeps only 3 slides in DOM to save memory. -->
-        <!-- don't modify these 3 pswp__item elements, data is added later on. -->
-        <div class="pswp__container">
-            <div class="pswp__item"></div>
-            <div class="pswp__item"></div>
-            <div class="pswp__item"></div>
-        </div>
-
-        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
-        <div class="pswp__ui pswp__ui--hidden">
-
-            <div class="pswp__top-bar">
-
-                <!--  Controls are self-explanatory. Order can be changed. -->
-
-                <div class="pswp__counter"></div>
-
-                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
-
-                <button class="pswp__button pswp__button--share" title="Share"></button>
-
-                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
-
-                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
-
-                <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
-                <!-- element will get class pswp__preloader-active when preloader is running -->
-                <div class="pswp__preloader">
-                    <div class="pswp__preloader__icn">
-                      <div class="pswp__preloader__cut">
-                        <div class="pswp__preloader__donut"></div>
-                      </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
-                <div class="pswp__share-tooltip"></div> 
-            </div>
-
-            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
-            </button>
-
-            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
-            </button>
-
-            <div class="pswp__caption">
-                <div class="pswp__caption__center"></div>
-            </div>
-
-          </div>
-
-        </div>
-</div>
-    <script src='http://photoswipe.s3-eu-west-1.amazonaws.com/pswp/dist/photoswipe.min.js'></script>
-    <script src='js/photoswipe-ui-default.js'></script>
-    <script src="js/photo.js"></script>
-    <script src="js/script-photo.js"></script>
-  </body>
-</html>
+    <div class="discription-type" id="project2"> 
+      <div class="preview">
+        <div class="project-title">Brian &amp; the Beta boys: </div>
+        <img class="imgHeader" src="imgs/placeholder2.png"/>
+      </div>
+    </div>
+    <div class="discription-type" id="project3"> 
+      <div class="preview">
+        <div class="project-title">Click to expand project </div>
+        <img class="imgHeader" src="imgs/placeholder2.png"/>
+      </div>
+    </div>
+    <div class="discription-type" id="project4"> 
+      <div class="preview">
+        <div class="project-title">Still Life Photographer </div>
+        <img class="imgHeader" src="imgs/placeholder2.png"/>
+      </div>
+    </div>

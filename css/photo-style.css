@@ -9,7 +9,6 @@ html, body {
 	margin: 0;
 	height: 100%;
 }
-
 body{
 	margin: 0px;
 	padding: 0px;
@@ -70,7 +69,23 @@ body{
 .body-content{
 	margin-top: 30px; 
 }
-
+.homeImgs{
+	position: relative;
+	height: 300px;
+	width: 470px;
+	margin: 20px;
+	float: left;
+	z-index: 1;
+}
+.homeImgs:nth-child(odd){
+	margin-left: 0px;
+}
+.homeImgs:nth-child(even){
+	margin-right: 0px;
+}
+#spacer{
+	height: 100px;
+}
 canvas {
 	position: fixed;
 	display: block;
@@ -92,6 +107,7 @@ canvas[resize]{
 	color: #fff;
 	font: 13px 'Courier New',Courier,monospace;
 	border-bottom: 1px dotted #fff;
+	z-index: 2;
 }
 button{
 	font: 13px 'Courier New',Courier,monospace;
@@ -229,21 +245,31 @@ body.has-active-menu {
 	background: #000;
 	color: #fff;
 	font: 13px 'Courier New',Courier,monospace;
+	z-index: 2;
 }
 #footer-left { 
 	float: left; 
 	width: 663px; 
 	border-top: 1px dotted #fff; 
 	margin-right: 2px; 
+	padding-top: 7px;
+	padding-bottom: 7px;
 }
 #footer-right {
     float: left;
     width: 315px;
     border-top: 1px dotted #fff;
+    padding-top: 7px;
+	padding-bottom: 7px;
 }
 #footer-name{
 	float: left;
-    padding: 5px 0px;
+    padding: 5px 6px;
+}
+#footer-name a{
+	text-decoration: none;
+	display: inline-block;
+	color: #fff;
 }
 #footer-date{
 	float: right;
@@ -266,3 +292,26 @@ body.has-active-menu {
 	float: left;
     padding: 5px 0px;
 }
+
+@media (max-width: 35.5em) {
+.width-container{
+	width: 480px;
+}
+#header{
+	width: 480px;
+}
+#footer{
+	width: 480px;
+}
+#footer-left{
+	width: 480px;
+}
+#footer-right {
+	display: none;
+}
+.homeImgs{display: block;}
+}
+
+@media (max-width: 979px) { 
+.homeImgs{margin: 0px;}
+ }

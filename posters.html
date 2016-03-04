@@ -1,55 +1,92 @@
-
 <!DOCTYPE html>
 <html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Brian Hicks</title>
 
-<head>
-	<title>Consumerism Posters</title>
-	<meta charset="utf-8">
-	<meta name="description" content="Design thinking.">
+     <!-- For iPhone image gallery -->
+    <link rel='stylesheet prefetch' href='http://photoswipe.s3.amazonaws.com/pswp/dist/photoswipe.css'>
+    <link rel='stylesheet prefetch' href='http://photoswipe.s3.amazonaws.com/pswp/dist/default-skin/default-skin.css'>
+    <!-- Personal CSS -->
+    <link rel="stylesheet" href="css/photo-style.css">
+    <!-- Load jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    
+  </head>
 
-	<link href='http://fonts.googleapis.com/css?family=Amethysta' rel='stylesheet' type='text/css'>
-	<link href='http://fonts.googleapis.com/css?family=Roboto+Mono:400,700,100' rel='stylesheet' type='text/css'>
+  <body>
+  <canvas id="paper-canvas" resize></canvas>
+  <div class="width-container">
+    <div id="header">
+        <div id="o-wrapper" class="o-wrapper">
+          <div class="c-buttons">
+            <button id="c-button--slide-top" class="c-button">Projects</button>
+          </div>
 
-	<link rel="shortcut icon" href="favicon.ico">
-	<link rel="stylesheet" type="text/css" href="css/style.css">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-	<script type="text/javascript" src="js/script.js"></script>
-</head>
+          <!-- other content in here -->
 
-<body>
-	<div id="wrapper">
+        </div><!-- /o-wrapper -->
 
-		<div class="topImgs">
-			<img src="imgs/posters/WeBuySouls.jpg">
-			<img id="middleTopImg" src="imgs/posters/cheap.jpg">
-			<img src="imgs/posters/detail.jpg">
-		</div>
+        <nav id="c-menu--slide-top" class="c-menu c-menu--slide-top">
+          <ul class="c-menu__items">
+            <li class="c-menu__item"><a href="/strava.html" class="c-menu__link">Strava</a></li> /
+            <li class="c-menu__item"><a href="/rio.html" class="c-menu__link">Rio</a></li> /
+            <li class="c-menu__item"><a href="/cycling.html" class="c-menu__link">RISD Cycling</a></li> /
+            <li class="c-menu__item"><a href="/dump.html" class="c-menu__link">Dump</a></li> /
+            <li class="c-menu__item"><a href="/nike.html" class="c-menu__link">Nike</a></li> /
+            <li class="c-menu__item"><a href="/posters.html" class="c-menu__link">Posters</a></li>
+          </ul>
+          <button class="c-menu__close">&#x2715;</button>
+        </nav>
+        <nav id="c-menu--slide-top" class="c-menu c-menu--slide-top">
+          <!-- ... -->
+        </nav>
 
-		<div id="twoTemp">
-			<div id="detailShot"><img src="imgs/posters/FallingManBig.jpg"></div>
-			<div id="detailShot"><img src="imgs/posters/FinalSlavesFinalFinal2.jpg"></div>
-		</div>
-		<div id="three">
-			<div class="bodytext templateText">
-				<span>Consumerism Posters</span>
-				<br><span class="desc">Description</span>
-				<br><p>A series of poster’s made in collaboration with Will Urmston on consumerism and discount culture. </p>
-				<br><p>Used colors, signs, and signals utilized by advertisers to produce a different message.</p>
-				<br><p>Various methods were used when creating these posters, including physical models, collage, Adobe Photoshop, and <br>3D modeling.</p>
-				<br><p>These were printed at a large scale and hung for the public to see.</p>
-				<br>
-				<br>
-				<br><span>Credits</span>
-				<br><span class="desc">2015. RISD. Making Meaning.</span>
-			</div>
-		</div>
-		<div id="buttons">
-			<div id="buttonsContainer">
-				<div id="previous"><a href="nike.html"><span>&#9664;</span></a></div>
-				<div id="next"><a href="calvino.html"><span>&#9654;</span></a></div>
-			</div>
-		</div>
-	</div>
-	<div id="exit"><a href="http://brian.gd">&#10005;</a></div>
+        <div id="c-mask" class="c-mask"></div><!-- /c-mask -->
+    </div>
+    <div class="body-content">
+      <img src="imgs/nike.png" draggable="false">
+    </div>
+    <div id="footer">
+      <div id="footer-left">
+        <div id="footer-name"><a href="/">Brian Hicks</a></div>
+        <div id="footer-date">
+          
+        </div>
+      </div>
+      <div id="footer-right">
+        <div id="footer-social">
+          <a href="https://www.instagram.com/brian.gd/">Instagram</a> / 
+          <a href="https://twitter.com/brian_gd">Twitter</a> / 
+          <a href="https://www.linkedin.com/in/brianmhicks">Linkedin</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    <!-- For iPhone image gallery -->
+    <script src='http://photoswipe.s3-eu-west-1.amazonaws.com/pswp/dist/photoswipe.min.js'></script>
+    <script src='js/photoswipe-ui-default.js'></script>
+    <script src="js/photo.js"></script>
+    <!-- Custom JS -->
+    <script src="js/script-photo.js"></script>
+    <!-- Slide top menu -->
+    <script src="js/menu.js"></script>
+    <script type="text/javascript">
+      var slideTop = new Menu({
+        wrapper: '#o-wrapper',
+        type: 'slide-top',
+        menuOpenerClass: '.c-button',
+        maskId: '#c-mask'
+      });
 
-</body>
+      var slideTopBtn = document.querySelector('#c-button--slide-top');
+      
+      slideTopBtn.addEventListener('click', function(e) {
+        e.preventDefault;
+        slideTop.open();
+      });
+  </script>   
+    
+  </body>
+</html>

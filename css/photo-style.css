@@ -285,7 +285,7 @@ body.has-active-menu {
   padding: 0 4px;
   color: #fff;
 }
-#footer-social a:hover{
+#footer-social a:hover, #footer-name a:hover{
 	text-decoration: line-through;
 }
 #footer-right-content{

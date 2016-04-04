@@ -5,12 +5,14 @@
     <title>Brian Hicks</title>
 
      <!-- For iPhone image gallery -->
-    <link rel='stylesheet prefetch' href='http://photoswipe.s3.amazonaws.com/pswp/dist/photoswipe.css'>
-    <link rel='stylesheet prefetch' href='http://photoswipe.s3.amazonaws.com/pswp/dist/default-skin/default-skin.css'>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=0, width=device-width, height=device-height"/>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <!-- Personal CSS -->
     <link rel="stylesheet" href="css/photo-style.css">
     <!-- Load jQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+
     
   </head>
 
@@ -69,117 +71,6 @@
       </div>
     </div>
   </div>
-
-
-<!-- Root element of PhotoSwipe. Must have class pswp. -->
-<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
-
-    <!-- Background of PhotoSwipe. 
-         It's a separate element, as animating opacity is faster than rgba(). -->
-    <div class="pswp__bg"></div>
-
-    <!-- Slides wrapper with overflow:hidden. -->
-    <div class="pswp__scroll-wrap">
-
-        <!-- Container that holds slides. PhotoSwipe keeps only 3 slides in DOM to save memory. -->
-        <!-- don't modify these 3 pswp__item elements, data is added later on. -->
-        <div class="pswp__container">
-            <div class="pswp__item"></div>
-            <div class="pswp__item"></div>
-            <div class="pswp__item"></div>
-        </div>
-
-        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
-        <div class="pswp__ui pswp__ui--hidden">
-
-            <div class="pswp__top-bar">
-
-                <!--  Controls are self-explanatory. Order can be changed. -->
-
-                <div class="pswp__counter"></div>
-
-                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
-
-                <button class="pswp__button pswp__button--share" title="Share"></button>
-
-                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
-
-                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
-
-                <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
-                <!-- element will get class pswp__preloader-active when preloader is running -->
-                <div class="pswp__preloader">
-                    <div class="pswp__preloader__icn">
-                      <div class="pswp__preloader__cut">
-                        <div class="pswp__preloader__donut"></div>
-                      </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
-                <div class="pswp__share-tooltip"></div> 
-            </div>
-
-            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
-            </button>
-
-            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
-            </button>
-
-            <div class="pswp__caption">
-                <div class="pswp__caption__center"></div>
-            </div>
-
-          </div>
-
-        </div>
-</div>
-    <!-- For iPhone image gallery -->
-    <script src='http://photoswipe.s3-eu-west-1.amazonaws.com/pswp/dist/photoswipe.min.js'></script>
-    <script src='js/photoswipe-ui-default.js'></script>
-    <script src="js/photo.js"></script>
-    <!-- Paper JS CDN -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/paper.js/0.9.25/paper-full.min.js"></script>
-    <!-- Paper JS
-    <script type="text/paperscript" canvas="paper-canvas">
-      function makeSomeLines(){
-        var count = 100;
-        var path = new Path.Line({
-          from: [0, 0],
-          to: [2000, 0],
-          strokeColor: 'white'
-      });
-        
-        path.strokeWidth = 10;
-
-        var symbol = new Symbol(path);
-
-        for (var i = 0; i < count; i++){
-          var center = Point.random() * view.size;
-          var placedSymbol = symbol.place(center);
-          placedSymbol.scale(1 / Math.sqrt(i) )
-        }
-      }
-
-      // everything in here will go at 60fps
-      function onFrame(event) {
-        for (var i = 0; i < project.activeLayer.children.length; i++){
-          var item = project.activeLayer.children[i];
-          item.position.y += item.bounds.width/20;
-
-          if (item.bounds.top > view.size.height){
-            item.position.y =  -item.bounds.height;
-          }
-        }
-      }
-
-      function onResize(event) {
-        project.clear();
-        makeSomeLines();
-      }
-
-    </script> -->
     <!-- Custom JS -->
     <script src="js/script-photo.js"></script>
     <!-- Slide top menu -->

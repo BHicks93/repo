@@ -119,6 +119,14 @@ body{
 	text-align: center;
 	background-color: black;
 }
+#desc-section a {
+	text-decoration: none;
+	border-bottom: solid 3px #fff;
+}
+#desc-section a:visited {
+	color: #fff;
+}
+
 #desc{
 	display: inline-block;
 	width: 600px;

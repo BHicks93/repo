@@ -1,0 +1,367 @@
+@import url(https://fonts.googleapis.com/css?family=Chonburi);
+/*@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700);
+@import url(https://fonts.googleapis.com/css?family=Suranna);
+@import url(https://fonts.googleapis.com/css?family=Playfair+Display:400,700,900);
+@import url(https://fonts.googleapis.com/css?family=Playfair+Display+SC:400,700,900);*/
+
+/*---------- Main Section CSS -----------*/
+html, body {
+	margin: 0;
+	height: 100%;
+}
+body{
+	margin: 0px;
+	padding: 0px;
+	background-color: #000;
+
+}
+.width-container{
+	width: 980px;
+	margin: 0 auto;
+	padding-top: 20px;
+}
+.discription-type{	
+	font-size: 175px;
+	font-family: 'Chonburi', cursive;
+	font-weight: 400;
+	line-height: 160px;
+	text-align: center;
+
+	/* Animated Backgrounds */
+	background: linear-gradient(0deg, #47b8ff, #fffd6c, #ff603b, #876cff, #ffdf47, #fd6cff);
+		background-size: 1200% 1200%;
+		-webkit-animation: DeviceGradient 120s ease infinite;
+		-o-animation: DeviceGradient 120s ease infinite;
+		animation: DeviceGradient 120s ease infinite;
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+	/*background: linear-gradient(0deg, #47b8ff, #fffd6c, #ff603b, #876cff, #ffdf47, #fd6cff);*/
+	background-image: -webkit-linear-gradient(0deg, #47b8ff, #fffd6c, #ff603b, #876cff, #ffdf47, #fd6cff);
+	   background-image: -moz-linear-gradient(0deg, #47b8ff, #fffd6c, #ff603b, #876cff, #ffdf47, #fd6cff);
+	     background-image: -o-linear-gradient(0deg, #47b8ff, #fffd6c, #ff603b, #876cff, #ffdf47, #fd6cff);
+		 	background-image: linear-gradient(0deg, #47b8ff, #fffd6c, #ff603b, #876cff, #ffdf47, #fd6cff);
+	background-size: 1200% 1200%;
+	-webkit-animation: DeviceGradient 120s ease infinite;
+	   -moz-animation: DeviceGradient 120s ease infinite;
+		 -o-animation: DeviceGradient 120s ease infinite;
+	        animation: DeviceGradient 120s ease infinite; }
+	@-webkit-keyframes DeviceGradient {
+	    0%{background-position:50% 0%}
+	    50%{background-position:50% 100%}
+	    100%{background-position:50% 0%}
+	}
+	@-moz-keyframes DeviceGradient {
+	    0%{background-position:50% 0%}
+	    50%{background-position:50% 100%}
+	    100%{background-position:50% 0%}
+	}
+	@-o-keyframes DeviceGradient {
+	    0%{background-position:50% 0%}
+	    50%{background-position:50% 100%}
+	    100%{background-position:50% 0%}
+	}
+	@keyframes DeviceGradient { 
+	    0%{background-position:50% 0%}
+	    50%{background-position:50% 100%}
+	    100%{background-position:50% 0%}
+	
+}
+.body-content{
+	margin-top: 20px; 
+}
+.section{
+	width: 100%;
+	height: 645px;
+}
+.temp{
+	height: 735px;
+}
+#strava-title{
+	background-color: #FC4C02;
+}
+#rio-title{
+	background-color: #FDFF4D;
+}
+#cycling-title{
+	background-color: #ED3E89;
+}
+#dump-title{
+	background-color: #5500D4;
+}
+#nike-title{
+	background-color: #E95814;
+}
+.title-section {
+	display: flex;
+ 	justify-content: center;
+}
+.title-section img {
+	align-self: center;
+}
+#title{
+	font: 102px helvetica, arial, sans-serif;
+	text-align: center;
+	vertical-align: middle;
+	line-height: 645px; 
+	color: #fff;
+}
+#img-section{
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+#desc-section{
+	display: table-cell;
+	width: 980px;
+	height: 645px;
+	vertical-align: middle;
+	text-align: center;
+	background-color: black;
+}
+#desc{
+	display: inline-block;
+	width: 600px;
+	height: 200px;
+	font: 24px helvetica, arial, sans-serif;
+	line-height: 32px; 
+	color: #fff;
+}
+#full-section img {
+	margin-top: -4px;
+}
+.homeImgs{
+	position: relative;
+	height: 300px;
+	width: 470px;
+	margin: 20px;
+	float: left;
+	z-index: 1;
+}
+.homeImgs:nth-child(odd){
+	margin-left: 0px;
+}
+.homeImgs:nth-child(even){
+	margin-right: 0px;
+}
+#spacer{
+	height: 100px;
+}
+/*---------- Header & Menu CSS -----------*/
+
+#header{
+	position: fixed;
+	top: 0px;
+	width: 980px;
+	background: #000;
+	color: #fff;
+	font: 13px 'Courier New',Courier,monospace;
+	border-bottom: 1px dotted #fff;
+	z-index: 2;
+}
+button{
+	font: 13px 'Courier New',Courier,monospace;
+	color: #fff;
+	background-color: transparent;
+    background-repeat:no-repeat;
+    border: none;
+    cursor:pointer;
+    overflow: hidden;
+    outline:none;
+}
+/**
+ * Menu overview.
+ */
+.c-menu {
+  position: fixed;
+  z-index: 200;
+  background-color: transparent;
+  transition: transform 0.3s;
+}
+
+.c-menu__items {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.c-buttons, .c-button{
+	height: 40px;
+}
+/**
+ * Close button resets.
+ */
+.c-menu__close {
+  color: #fff;
+  background-color: #000;
+  font-size: 13px;
+  border: none;
+  box-shadow: none;
+  border-radius: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  cursor: pointer;
+}
+
+/**
+ * Close button resets.
+ */
+.c-menu__close:focus {
+  outline: none;
+}
+
+/**
+ * Body states.
+ *
+ * When a menu is active, we want to hide the overflows on the body to prevent
+ * awkward document scrolling.
+ */
+body.has-active-menu {
+  overflow: hidden;
+}
+
+/**
+ * Mask component
+ */
+
+.c-mask {
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  width: 0;
+  height: 0;
+  background-color: #000;
+  opacity: 0;
+  transition: opacity 0.3s, width 0s 0.3s, height 0s 0.3s;
+}
+
+.c-mask.is-active {
+  width: 100%;
+  height: 100%;
+  opacity: 0.7;
+  transition: opacity 0.3s;
+}
+
+.c-menu--slide-top {
+  vertical-align: middle;
+  width: 100%;
+  height: 40px;
+  text-align: center;
+  overflow-x: scroll;
+}
+
+.c-menu--slide-top .c-menu__items {
+  display: inline-block;
+  text-align: center;
+}
+
+.c-menu--slide-top .c-menu__item {
+  display: inline-block;
+  line-height: 40px;
+}
+
+.c-menu--slide-top .c-menu__link {
+  text-decoration: none;
+  display: block;
+  padding: 0 4px;
+  color: #fff;
+}
+.c-menu--slide-top .c-menu__link:hover {
+  text-decoration: line-through;
+}
+.c-menu--slide-top .c-menu__close {
+  display: inline-block;
+  padding: 0 24px;
+  height: 40px;
+  line-height: 40px;
+}
+.c-menu--slide-top {
+  top: 0;
+  left: 0;
+  transform: translateY(-40px);
+}
+
+.c-menu--slide-top.is-active {
+  transform: translateY(0);
+}
+
+/*---------- Footer CSS -----------*/
+#footer{
+	position: fixed;
+	bottom: 0px;
+	width: 980px;
+	background: #000;
+	color: #fff;
+	font: 13px 'Courier New',Courier,monospace;
+	z-index: 2;
+}
+#footer-left { 
+	float: left; 
+	width: 663px; 
+	border-top: 1px dotted #fff; 
+	margin-right: 2px; 
+	padding-top: 7px;
+	padding-bottom: 7px;
+}
+#footer-right {
+    float: left;
+    width: 315px;
+    border-top: 1px dotted #fff;
+    padding-top: 7px;
+	padding-bottom: 7px;
+}
+#footer-name{
+	float: left;
+    padding: 5px 6px;
+}
+#footer-name a{
+	text-decoration: none;
+	display: inline-block;
+	color: #fff;
+}
+#footer-date{
+	float: right;
+    padding: 5px 0px;
+}
+#footer-social{
+    float: left;
+    padding: 5px 0px;
+}
+#footer-social a{
+	text-decoration: none;
+  display: inline-block;
+  padding: 0 4px;
+  color: #fff;
+}
+#footer-social a:hover, #footer-name a:hover{
+	text-decoration: line-through;
+}
+#footer-right-content{
+	float: left;
+    padding: 5px 0px;
+}
+
+@media (max-width: 35.5em) {
+.width-container{
+	width: 480px;
+}
+#header{
+	width: 480px;
+}
+#footer{
+	width: 480px;
+}
+#footer-left{
+	width: 480px;
+}
+#footer-right {
+	display: none;
+}
+.homeImgs{display: block;}
+}
+
+@media (max-width: 979px) { 
+.homeImgs{margin: 0px;}
+ }

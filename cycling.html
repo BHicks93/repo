@@ -3,24 +3,19 @@
   <head>
     <meta charset="UTF-8">
     <title>Brian Hicks</title>
-
-     <!-- For iPhone image gallery -->
-    <link rel='stylesheet prefetch' href='http://photoswipe.s3.amazonaws.com/pswp/dist/photoswipe.css'>
-    <link rel='stylesheet prefetch' href='http://photoswipe.s3.amazonaws.com/pswp/dist/default-skin/default-skin.css'>
     <!-- Personal CSS -->
-    <link rel="stylesheet" href="css/photo-style.css">
+    <link rel="stylesheet" href="css/styles.css">
     <!-- Load jQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
     
   </head>
 
   <body>
-  <canvas id="paper-canvas" resize></canvas>
   <div class="width-container">
     <div id="header">
         <div id="o-wrapper" class="o-wrapper">
           <div class="c-buttons">
-            <button id="c-button--slide-top" class="c-button">Projects</button>
+            <button id="c-button--slide-top" class="c-button">&#x2261; Projects</button>
           </div>
 
           <!-- other content in here -->
@@ -45,7 +40,33 @@
         <div id="c-mask" class="c-mask"></div><!-- /c-mask -->
     </div>
     <div class="body-content">
-      <img src="imgs/RISD-Cycling.png" draggable="false">
+      <div class="section title-section" id="cycling-title">
+        <img src="imgs/cycling/logo.png" draggable="false">
+      </div>
+      <div class="section" id="img-section">
+        <img src="imgs/cycling/cover.jpg" draggable="false">
+      </div>
+      <div class="section" id="desc-section">
+        <div id="desc">
+           RISD Cycling is first and only varsity sports team at RISD. Founded in 2011, the team competes in the Eastern Collegiate Cycling Conference with races all over the East Coast. RISD Cycling is the nation's only art school contendant in cycling, and the only team that knows the true meaning of a crit. As a team member, I have designed jerseys, directing photoshoots, created physical goods, and won a few races.
+        </div>
+      </div>
+      <div class="section temp" id="full-section">
+        <img src="imgs/cycling/cover2.jpg" draggable="false">
+        <img src="imgs/cycling/cycling-spread1.jpg" draggable="false">
+        <img src="imgs/cycling/cycling-spread2.jpg" draggable="false">
+        <img src="imgs/cycling/cycling-spread3.jpg" draggable="false">
+        <img src="imgs/cycling/cycling-spread4.jpg" draggable="false">
+        <img src="imgs/cycling/cycling-spread5.jpg" draggable="false">
+        <img src="imgs/cycling/cycling-spread6.jpg" draggable="false">
+        <img src="imgs/cycling/cycling-spread7.jpg" draggable="false">
+        <img src="imgs/cycling/cycling-spread8.jpg" draggable="false">
+        <img src="imgs/cycling/cycling-spread9.jpg" draggable="false">
+        <img src="imgs/cycling/cycling-spread10.jpg" draggable="false">
+        <img src="imgs/cycling/cycling-spread11.jpg" draggable="false">
+        <img src="imgs/cycling/cycling-spread12.jpg" draggable="false">
+        <img src="imgs/cycling/cycling-spread13.jpg" draggable="false">
+      </div>
     </div>
     <div id="footer">
       <div id="footer-left">
@@ -63,78 +84,8 @@
       </div>
     </div>
   </div>
-
-
-<!-- Root element of PhotoSwipe. Must have class pswp. -->
-<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
-
-    <!-- Background of PhotoSwipe. 
-         It's a separate element, as animating opacity is faster than rgba(). -->
-    <div class="pswp__bg"></div>
-
-    <!-- Slides wrapper with overflow:hidden. -->
-    <div class="pswp__scroll-wrap">
-
-        <!-- Container that holds slides. PhotoSwipe keeps only 3 slides in DOM to save memory. -->
-        <!-- don't modify these 3 pswp__item elements, data is added later on. -->
-        <div class="pswp__container">
-            <div class="pswp__item"></div>
-            <div class="pswp__item"></div>
-            <div class="pswp__item"></div>
-        </div>
-
-        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
-        <div class="pswp__ui pswp__ui--hidden">
-
-            <div class="pswp__top-bar">
-
-                <!--  Controls are self-explanatory. Order can be changed. -->
-
-                <div class="pswp__counter"></div>
-
-                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
-
-                <button class="pswp__button pswp__button--share" title="Share"></button>
-
-                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
-
-                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
-
-                <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
-                <!-- element will get class pswp__preloader-active when preloader is running -->
-                <div class="pswp__preloader">
-                    <div class="pswp__preloader__icn">
-                      <div class="pswp__preloader__cut">
-                        <div class="pswp__preloader__donut"></div>
-                      </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
-                <div class="pswp__share-tooltip"></div> 
-            </div>
-
-            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
-            </button>
-
-            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
-            </button>
-
-            <div class="pswp__caption">
-                <div class="pswp__caption__center"></div>
-            </div>
-
-          </div>
-
-        </div>
-</div>
-    <!-- For iPhone image gallery -->
-    <script src='http://photoswipe.s3-eu-west-1.amazonaws.com/pswp/dist/photoswipe.min.js'></script>
-    <script src='js/photoswipe-ui-default.js'></script>
-    <script src="js/photo.js"></script>
     <!-- Custom JS -->
-    <script src="js/script-photo.js"></script>
+    <script src="js/script.js"></script>
     <!-- Slide top menu -->
     <script src="js/menu.js"></script>
     <script type="text/javascript">

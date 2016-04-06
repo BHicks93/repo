@@ -3,24 +3,19 @@
   <head>
     <meta charset="UTF-8">
     <title>Brian Hicks</title>
-
-     <!-- For iPhone image gallery -->
-    <link rel='stylesheet prefetch' href='http://photoswipe.s3.amazonaws.com/pswp/dist/photoswipe.css'>
-    <link rel='stylesheet prefetch' href='http://photoswipe.s3.amazonaws.com/pswp/dist/default-skin/default-skin.css'>
     <!-- Personal CSS -->
-    <link rel="stylesheet" href="css/photo-style.css">
+    <link rel="stylesheet" href="css/styles.css">
     <!-- Load jQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
     
   </head>
 
   <body>
-  <canvas id="paper-canvas" resize></canvas>
   <div class="width-container">
     <div id="header">
         <div id="o-wrapper" class="o-wrapper">
           <div class="c-buttons">
-            <button id="c-button--slide-top" class="c-button">Projects</button>
+            <button id="c-button--slide-top" class="c-button">&#x2261; Projects</button>
           </div>
 
           <!-- other content in here -->
@@ -34,7 +29,7 @@
             <li class="c-menu__item"><a href="/cycling.html" class="c-menu__link">RISD Cycling</a></li> /
             <li class="c-menu__item"><a href="/dump.html" class="c-menu__link">Dump</a></li> /
             <li class="c-menu__item"><a href="/nike.html" class="c-menu__link">Nike</a></li> /
-            <li class="c-menu__item"><a href="/misc.html" class="c-menu__link">misc</a></li>
+            <li class="c-menu__item"><a href="/misc.html" class="c-menu__link">Misc</a></li>
           </ul>
           <button class="c-menu__close">&#x2715;</button>
         </nav>
@@ -45,7 +40,9 @@
         <div id="c-mask" class="c-mask"></div><!-- /c-mask -->
     </div>
     <div class="body-content">
-      <img src="imgs/misc.jpg" draggable="false">
+      <div class="section temp" id="full-section">
+        <img src="imgs/misc.jpg" draggable="false">
+      </div>
     </div>
     <div id="footer">
       <div id="footer-left">
@@ -63,13 +60,8 @@
       </div>
     </div>
   </div>
-</div>
-    <!-- For iPhone image gallery -->
-    <script src='http://photoswipe.s3-eu-west-1.amazonaws.com/pswp/dist/photoswipe.min.js'></script>
-    <script src='js/photoswipe-ui-default.js'></script>
-    <script src="js/photo.js"></script>
     <!-- Custom JS -->
-    <script src="js/script-photo.js"></script>
+    <script src="js/script.js"></script>
     <!-- Slide top menu -->
     <script src="js/menu.js"></script>
     <script type="text/javascript">

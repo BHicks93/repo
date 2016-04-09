@@ -185,6 +185,7 @@ button{
   z-index: 200;
   background-color: transparent;
   transition: transform 0.3s;
+  overflow:hidden;
 }
 
 .c-menu__items {

@@ -180,7 +180,6 @@ button{
  */
 .c-menu__close {
   color: #fff;
-  background-color: #000;
   font-size: 13px;
   border: none;
   box-shadow: none;
@@ -331,6 +330,10 @@ body.has-active-menu {
     padding: 5px 0px;
 }
 
+/*---------- Hide Mobile CSS -----------*/
+.mobileContent{display: none;}
+
+/*---------- Media Queries CSS -----------*/
 @media (max-width: 35.5em) {
 .width-container{
 	width: 480px;
@@ -352,3 +355,60 @@ body.has-active-menu {
 @media (max-width: 979px) { 
 .homeImgs{margin: 0px;}
  }
+ /*styles for mobile*/
+@media only screen and (max-width: 480px) {
+	img{display: none;}
+	.homeImgs{height: auto;}
+	.mobileContainer{}
+	.mobileContent{
+		display: inline-block;
+		width: 100vw; word-wrap: break-word;
+		color: #fff;
+		font: 80px 'Montserrat', helvetica, arial, sans-serif;
+		font-weight: 700;
+		line-height: 70px;
+		/* Animated Backgrounds */
+	background: linear-gradient(0deg, #47b8ff, #fffd6c, #ff603b, #876cff, #ffdf47, #fd6cff);
+		background-size: 1200% 1200%;
+		-webkit-animation: DeviceGradient 120s ease infinite;
+		-o-animation: DeviceGradient 120s ease infinite;
+		animation: DeviceGradient 120s ease infinite;
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+	/*background: linear-gradient(0deg, #47b8ff, #fffd6c, #ff603b, #876cff, #ffdf47, #fd6cff);*/
+	background-image: -webkit-linear-gradient(0deg, #47b8ff, #fffd6c, #ff603b, #876cff, #ffdf47, #fd6cff);
+	   background-image: -moz-linear-gradient(0deg, #47b8ff, #fffd6c, #ff603b, #876cff, #ffdf47, #fd6cff);
+	     background-image: -o-linear-gradient(0deg, #47b8ff, #fffd6c, #ff603b, #876cff, #ffdf47, #fd6cff);
+		 	background-image: linear-gradient(0deg, #47b8ff, #fffd6c, #ff603b, #876cff, #ffdf47, #fd6cff);
+	background-size: 1200% 1200%;
+	-webkit-animation: DeviceGradient 120s ease infinite;
+	   -moz-animation: DeviceGradient 120s ease infinite;
+		 -o-animation: DeviceGradient 120s ease infinite;
+	        animation: DeviceGradient 120s ease infinite; }
+	@-webkit-keyframes DeviceGradient {
+	    0%{background-position:50% 0%}
+	    50%{background-position:50% 100%}
+	    100%{background-position:50% 0%}
+	}
+	@-moz-keyframes DeviceGradient {
+	    0%{background-position:50% 0%}
+	    50%{background-position:50% 100%}
+	    100%{background-position:50% 0%}
+	}
+	@-o-keyframes DeviceGradient {
+	    0%{background-position:50% 0%}
+	    50%{background-position:50% 100%}
+	    100%{background-position:50% 0%}
+	}
+	@keyframes DeviceGradient { 
+	    0%{background-position:50% 0%}
+	    50%{background-position:50% 100%}
+	    100%{background-position:50% 0%}
+	}
+	.c-menu--slide-top .c-menu__items .c-menu__item{
+		display: block;
+		width: 100vw;
+		height: 40px;
+		padding-top: 10px;
+	}
+}

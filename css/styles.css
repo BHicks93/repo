@@ -332,6 +332,7 @@ body.has-active-menu {
 
 /*---------- Hide Mobile CSS -----------*/
 .mobileContent{display: none;}
+.mobileMenu{display: none;}
 
 /*---------- Media Queries CSS -----------*/
 @media (max-width: 35.5em) {
@@ -405,10 +406,5 @@ body.has-active-menu {
 	    50%{background-position:50% 100%}
 	    100%{background-position:50% 0%}
 	}
-	.c-menu--slide-top .c-menu__items .c-menu__item{
-		display: block;
-		width: 100vw;
-		height: 40px;
-		padding-top: 10px;
-	}
+	.mobileMenu{display: block;}
 }

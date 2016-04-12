@@ -359,10 +359,10 @@ body.has-active-menu {
 @media only screen and (max-width: 480px) {
 	img{display: none;}
 	.homeImgs{height: auto;}
-	.mobileContainer{}
 	.mobileContent{
 		display: inline-block;
 		width: 100vw; word-wrap: break-word;
+		overflow-x: hidden; 
 		color: #fff;
 		font: 80px 'Montserrat', helvetica, arial, sans-serif;
 		font-weight: 700;

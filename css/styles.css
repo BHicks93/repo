@@ -359,66 +359,60 @@ body.has-active-menu {
  /*styles for mobile*/
 @media only screen and (max-width: 480px) {
 	img{display: none;}
+	.c-button{display: none;}
+	#footer{display: none;}
+	.body-content{margin-top: 0px;}
+	.width-container{padding: 0px;}
 	.homeImgs{height: auto;}
 	.mobileContent{
 		display: inline-block;
-		width: 100vw; word-wrap: break-word;
-		overflow-x: hidden; 
+		width: 100vw;
+		height: 100vh;
+		overflow: hidden; 
+		padding-top: 25px;}
+	.mobileLgText{
+		transform: rotate(90deg);
 		color: #fff;
-		font: 80px 'Montserrat', helvetica, arial, sans-serif;
+		font: 180px 'Montserrat', helvetica, arial, sans-serif;
 		font-weight: 700;
-		line-height: 70px;
+		line-height: 170px;
 		/* Animated Backgrounds */
-	background: linear-gradient(0deg, #47b8ff, #fffd6c, #ff603b, #876cff, #ffdf47, #fd6cff);
+		background: linear-gradient(0deg, #47b8ff, #fffd6c, #ff603b, #876cff, #ffdf47, #fd6cff);
 		background-size: 1200% 1200%;
 		-webkit-animation: DeviceGradient 120s ease infinite;
 		-o-animation: DeviceGradient 120s ease infinite;
 		animation: DeviceGradient 120s ease infinite;
 		-webkit-background-clip: text;
 		-webkit-text-fill-color: transparent;
-	/*background: linear-gradient(0deg, #47b8ff, #fffd6c, #ff603b, #876cff, #ffdf47, #fd6cff);*/
-	background-image: -webkit-linear-gradient(0deg, #47b8ff, #fffd6c, #ff603b, #876cff, #ffdf47, #fd6cff);
-	   background-image: -moz-linear-gradient(0deg, #47b8ff, #fffd6c, #ff603b, #876cff, #ffdf47, #fd6cff);
-	     background-image: -o-linear-gradient(0deg, #47b8ff, #fffd6c, #ff603b, #876cff, #ffdf47, #fd6cff);
-		 	background-image: linear-gradient(0deg, #47b8ff, #fffd6c, #ff603b, #876cff, #ffdf47, #fd6cff);
-	background-size: 1200% 1200%;
-	-webkit-animation: DeviceGradient 120s ease infinite;
-	   -moz-animation: DeviceGradient 120s ease infinite;
+		/*background: linear-gradient(0deg, #47b8ff, #fffd6c, #ff603b, #876cff, #ffdf47, #fd6cff);*/
+		background-image: -webkit-linear-gradient(90deg, #47b8ff, #fffd6c, #ff603b, #876cff, #ffdf47, #fd6cff);
+		background-image: -moz-linear-gradient(90deg, #47b8ff, #fffd6c, #ff603b, #876cff, #ffdf47, #fd6cff);
+		 background-image: -o-linear-gradient(90deg, #47b8ff, #fffd6c, #ff603b, #876cff, #ffdf47, #fd6cff);
+		 	background-image: linear-gradient(90deg, #47b8ff, #fffd6c, #ff603b, #876cff, #ffdf47, #fd6cff);
+		background-size: 1200% 1200%;
+		-webkit-animation: DeviceGradient 120s ease infinite;
+		-moz-animation: DeviceGradient 120s ease infinite;
 		 -o-animation: DeviceGradient 120s ease infinite;
-	        animation: DeviceGradient 120s ease infinite; }
-	@-webkit-keyframes DeviceGradient {
-	    0%{background-position:50% 0%}
-	    50%{background-position:50% 100%}
-	    100%{background-position:50% 0%}
+		    animation: DeviceGradient 120s ease infinite; }
+		@-webkit-keyframes DeviceGradient {
+		0%{background-position:50% 0%}
+		50%{background-position:50% 100%}
+		100%{background-position:50% 0%}
+		}
+		@-moz-keyframes DeviceGradient {
+		0%{background-position:50% 0%}
+		50%{background-position:50% 100%}
+		100%{background-position:50% 0%}
+		}
+		@-o-keyframes DeviceGradient {
+		0%{background-position:50% 0%}
+		50%{background-position:50% 100%}
+		100%{background-position:50% 0%}
+		}
+		@keyframes DeviceGradient { 
+		0%{background-position:50% 0%}
+		50%{background-position:50% 100%}
+		100%{background-position:50% 0%}
 	}
-	@-moz-keyframes DeviceGradient {
-	    0%{background-position:50% 0%}
-	    50%{background-position:50% 100%}
-	    100%{background-position:50% 0%}
-	}
-	@-o-keyframes DeviceGradient {
-	    0%{background-position:50% 0%}
-	    50%{background-position:50% 100%}
-	    100%{background-position:50% 0%}
-	}
-	@keyframes DeviceGradient { 
-	    0%{background-position:50% 0%}
-	    50%{background-position:50% 100%}
-	    100%{background-position:50% 0%}
-	}
-	.mobileMenu{display: block;}
-	#t01{line-height: 65px;}
-	#t02{line-height: 60px;}
-	#t03{line-height: 55px;}
-	#t04{line-height: 50px;}
-	#t05{line-height: 45px;}
-	#t06{line-height: 40px;}
-	#t07{line-height: 35px;}
-	#t08{line-height: 30px;}
-	#t09{line-height: 25px;}
-	#t10{line-height: 20px;}
-	#t11{line-height: 15px;}
-	#t12{line-height: 10px;}
-	#t13{line-height: 5px;}
-	#t14{line-height: 0px;}
+	.mobileSmText{text-align: center; margin:40px; font: 18px 'Courier New',Courier,monospace; color:#fff; background:#000;}
 }

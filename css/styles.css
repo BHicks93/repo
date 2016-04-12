@@ -358,6 +358,7 @@ body.has-active-menu {
  }
  /*styles for mobile*/
 @media only screen and (max-width: 480px) {
+	html{overflow: hidden;}
 	img{display: none;}
 	.c-button{display: none;}
 	#footer{display: none;}

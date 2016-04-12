@@ -369,7 +369,6 @@ body.has-active-menu {
 		display: inline-block;
 		width: 100vw;
 		height: 100vh;
-		overflow: hidden; 
 		padding-top: 25px;}
 	.mobileLgText{
 		transform: rotate(90deg);
@@ -415,5 +414,5 @@ body.has-active-menu {
 		50%{background-position:50% 100%}
 		100%{background-position:50% 0%}
 	}
-	.mobileSmText{text-align: center; margin:40px; font: 18px 'Courier New',Courier,monospace; color:#fff; background:#000;}
+	.mobileSmText{text-align: center; margin:50px; font: 18px 'Courier New',Courier,monospace; color:#fff; background:#000;}
 }

@@ -3,106 +3,40 @@
   <head>
     <meta charset="UTF-8">
     <title>Brian Hicks</title>
+
+     <!-- For iPhone -->
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=0, width=device-width, height=device-height"/>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <!-- Personal CSS -->
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/style.css">
     <!-- Load jQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
-    
   </head>
 
   <body>
-  <div class="width-container">
-    <div id="header">
-        <div id="o-wrapper" class="o-wrapper">
-          <div class="c-buttons">
-            <button id="c-button--slide-top" class="c-button">&#x2261; Projects</button>
-          </div>
-
-          <!-- other content in here -->
-
-        </div><!-- /o-wrapper -->
-
-        <nav id="c-menu--slide-top" class="c-menu c-menu--slide-top">
-          <ul class="c-menu__items">
-            <li class="c-menu__item"><a href="/strava.html" class="c-menu__link">Strava</a></li> /
-            <li class="c-menu__item"><a href="/rio.html" class="c-menu__link">Rio</a></li> /
-            <li class="c-menu__item"><a href="/cycling.html" class="c-menu__link">RISD Cycling</a></li> /
-            <li class="c-menu__item"><a href="/dump.html" class="c-menu__link">Dump</a></li> /
-            <li class="c-menu__item"><a href="/nike.html" class="c-menu__link">Nike</a></li> /
-            <li class="c-menu__item"><a href="/misc.html" class="c-menu__link">Misc</a></li>
-          </ul>
-          <button class="c-menu__close">&#x2715;</button>
-        </nav>
-        <nav id="c-menu--slide-top" class="c-menu c-menu--slide-top">
-          <!-- ... -->
-        </nav>
-
-        <div id="c-mask" class="c-mask"></div><!-- /c-mask -->
-    </div>
-    <div class="body-content">
-      <div class="section title-section" id="cycling-title">
-        <img src="imgs/cycling/logo.png" draggable="false">
+  <div id="wrapper">
+  <nav>
+      <div><a class="none" href="/"><u>Brian Hicks</u></a></div>
+    </nav>
+    <div class="description">
+         This kit design was created for RISD Cycling's 2016 race season. The kit includes a jersey, bibs, vest, windbreaker, socks, arm warmers, knee warmers, and a bandana. Visit <a href="http://www.risdcycling.com/" target="_blank">risdcycling.com</a>
       </div>
-      <div class="section" id="img-section">
+      <div class="photos">
         <img src="imgs/cycling/cover.jpg" draggable="false">
-      </div>
-      <div class="section" id="desc-section">
-        <div id="desc">
-           RISD Cycling is first and only varsity sports team at RISD. Founded in 2011, the team competes in the Eastern Collegiate Cycling Conference with races all over the East Coast. RISD Cycling is the nation's only art school contendant in cycling, and the only team that knows the true meaning of a crit. As a team member, I have designed jerseys, directing photoshoots, created physical goods, and won a few races.
-        </div>
-      </div>
-      <div class="section temp" id="full-section">
-        <img src="imgs/cycling/cover2.jpg" draggable="false">
         <img src="imgs/cycling/cycling-spread1.jpg" draggable="false">
         <img src="imgs/cycling/cycling-spread2.jpg" draggable="false">
         <img src="imgs/cycling/cycling-spread3.jpg" draggable="false">
         <img src="imgs/cycling/cycling-spread4.jpg" draggable="false">
         <img src="imgs/cycling/cycling-spread5.jpg" draggable="false">
-        <img src="imgs/cycling/cycling-spread6.jpg" draggable="false">
-        <img src="imgs/cycling/cycling-spread7.jpg" draggable="false">
-        <img src="imgs/cycling/cycling-spread8.jpg" draggable="false">
-        <img src="imgs/cycling/cycling-spread9.jpg" draggable="false">
-        <img src="imgs/cycling/cycling-spread10.jpg" draggable="false">
-        <img src="imgs/cycling/cycling-spread11.jpg" draggable="false">
-        <img src="imgs/cycling/cycling-spread12.jpg" draggable="false">
-        <img src="imgs/cycling/cycling-spread13.jpg" draggable="false">
       </div>
-    </div>
-    <div id="footer">
-      <div id="footer-left">
-        <div id="footer-name"><a href="/">Brian Hicks</a></div>
-        <div id="footer-date">
-          
-        </div>
-      </div>
-      <div id="footer-right">
-        <div id="footer-social">
-          <a href="https://www.instagram.com/brian.gd/">Instagram</a> / 
-          <a href="https://twitter.com/brian_gd">Twitter</a> / 
-          <a href="https://www.linkedin.com/in/brianmhicks">Linkedin</a>
-        </div>
-      </div>
-    </div>
-  </div>
-    <!-- Custom JS -->
-    <script src="js/script.js"></script>
-    <!-- Slide top menu -->
-    <script src="js/menu.js"></script>
-    <script type="text/javascript">
-      var slideTop = new Menu({
-        wrapper: '#o-wrapper',
-        type: 'slide-top',
-        menuOpenerClass: '.c-button',
-        maskId: '#c-mask'
-      });
-
-      var slideTopBtn = document.querySelector('#c-button--slide-top');
       
-      slideTopBtn.addEventListener('click', function(e) {
-        e.preventDefault;
-        slideTop.open();
-      });
-  </script>   
-    
+    <div class="arrow" id="back"><a href="/formation.html">&#8676;</a></div>
+    <div class="arrow" id="forward"><a href="/strava.html">&#8677;</a></div>
+      
+    </div>
+    <!-- Custom JS -->
+    <script src="js/script.js"></script> 
   </body>
 </html>
+

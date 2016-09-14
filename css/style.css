@@ -216,6 +216,24 @@ ul ul{
 	color: yellow;
 	text-decoration: none;
 }
+.info-page{
+	margin: 0px;
+	padding: 0px;
+}
+.info-page .list{
+	margin-top: 0px;
+	margin-left: 20px;
+	padding-top: 0px; 
+}
+.info-page .none, .info-page .info-h1, .info-page .list{
+	clear: left;
+}
+.info-page .info-h1{
+	margin-bottom: 0px;
+}
+.photos img {
+	margin-top: -9px;
+}
 @media only screen 
 and (min-device-width : 375px) 
 and (max-device-width : 667px) {

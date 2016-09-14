@@ -1,56 +1,37 @@
-
 <!DOCTYPE html>
 <html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Brian Hicks</title>
 
-<head>
-	<title>Breed Bunnies</title>
-	<meta charset="utf-8">
-	<meta name="description" content="Design thinking.">
+     <!-- For iPhone -->
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=0, width=device-width, height=device-height"/>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <!-- Personal CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Load jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+  </head>
 
-	<link href='http://fonts.googleapis.com/css?family=Amethysta' rel='stylesheet' type='text/css'>
-	<link href='http://fonts.googleapis.com/css?family=Roboto+Mono:400,700,100' rel='stylesheet' type='text/css'>
-
-	<link rel="shortcut icon" href="favicon.ico">
-	<link rel="stylesheet" type="text/css" href="css/style.css">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-	<script type="text/javascript" src="js/script.js"></script>
-</head>
-
-<body>
-	<div id="wrapper">
-
-		<div class="topImgs">
-			<img src="imgs/bunnies/bunnies1.jpg">
-			<img id="middleTopImg" src="imgs/bunnies/bunnies2.jpg">
-			<img src="imgs/bunnies/bunnies3.jpg">
-		</div>
-
-		<div id="twoTemp">
-			<div id="detailShot"><img src="imgs/bunnies/bunnies4.jpg"></div>
-			<div id="detailShot"><img src="imgs/bunnies/bunnies6.jpg"></div>
-			<div id="detailShot"><img src="imgs/bunnies/bunnies5.jpg"></div>
-		</div>
-		<div id="three">
-			<div class="bodytext templateText">
-				<span>Breed Bunnies</span>
-				<br><span class="desc">Description</span>
-				<br><p>A single serve site that allows users to breed bunnies.</p>
-				<br><p>A single serving site is a website that comprises of a single page does only one thing.</p>
-				<br><p>A "one-liner" online.</p>
-				<br><a href="http://breedbunnies.brian.gd/"><span>Visit Site &#8594;</span></a>
-				<br>
-				<br>
-				<br><span>Credits</span>
-				<br><span class="desc">2015. RISD. GD for the Web.</span>
-			</div>
-		</div>
-		<div id="buttons">
-			<div id="buttonsContainer">
-				<div id="previous"><a href="synergy.html"><span>&#9664;</span></a></div>
-				<div id="next"><a href="clinton.html"><span>&#9654;</span></a></div>
-			</div>
-		</div>
-	</div>
-	<div id="exit"><a href="http://brian.gd">&#10005;</a></div>
-
-</body>
+  <body>
+  <div id="wrapper">
+  <nav>
+      <div><a class="none" href="/"><u>Brian Hicks</u></a></div>
+    </nav>
+    <div class="description">
+         A single serve site that allows users to breed bunnies.
+		<br><a href="http://breedbunnies.brian.gd/"><span>Visit Site &#8594;</span></a>
+      </div>
+      <div class="photos">
+        <img src="imgs/bunnies/bunnies4.jpg" draggable="false">
+      </div>
+      
+    <div class="arrow" id="back"><a href="/nike.html">&#8676;</a></div>
+    <div class="arrow" id="forward"><a href="/health.html">&#8677;</a></div>
+      
+    </div>
+    <!-- Custom JS -->
+    <script src="js/script.js"></script> 
+  </body>
+</html>

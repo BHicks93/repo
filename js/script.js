@@ -30,6 +30,11 @@ $(document).ready(function() {
 	$( "#info-trigger" ).on( "click", function() {
 		$(".info-page").toggleClass('show'); 
 	});
+	$( "#menu-trigger" ).on( "click", function() {
+		$(".mobile-menu").toggleClass('show'); 
+		$(".menu-close").toggleClass('show');
+		$(".proj-ham").toggleClass('hide');
+	});
 	$( "#index-wrapper" ).css( "width", $( window ).width() );
 	$( window ).resize(function() {
 	  $( "#index-wrapper" ).css( "width", $( window ).width() );

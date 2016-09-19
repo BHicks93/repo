@@ -1,5 +1,6 @@
-@import 'https://fonts.googleapis.com/css?family=Work+Sans:300';
-@import 'https://fonts.googleapis.com/css?family=Space+Mono:700';
+@import 'https://fonts.googleapis.com/css?family=Work+Sans:300,700';
+@import 'https://fonts.googleapis.com/css?family=Six+Caps';
+/*@import 'https://fonts.googleapis.com/css?family=Space+Mono:700';*/
 
 body {
 	background-color: black;
@@ -31,10 +32,25 @@ div{
 }
 .projects{
 	position: absolute;
-	top: 55px;
+	top: 0px;
+	margin: 0px;
+	margin-top: 10px;
+	margin-left: 40px;
+	padding: 0px;
+	transition: all .2s ease-in-out;
+}
+.projects-left{
+	left: 400px;
+	transition: all .2s ease-in-out;
 }
 .projects img{
 	border: 4px solid white;
+}
+.project{
+	height: 450px;
+	width: 450px;
+	padding: 0px;
+	margin: 0px;
 }
 #project1{
 	position: relative;
@@ -59,6 +75,7 @@ div{
 #project3{
 	position: relative;
 	top:50px;
+	left: 50px;
 }
 #project3 img {
 	margin-top: 30px;
@@ -67,9 +84,9 @@ div{
 	margin-bottom: -50px;
 }
 #project4{
-	clear: both;
 	position: relative;
-	top:10px;
+	top:120px;
+	left: -20px;
 }
 #project4 img {
 	margin-top: 15px;
@@ -89,7 +106,8 @@ div{
 }
 #project6{
 	position: relative;
-	top:-20px;
+	top:50px;
+	left: 50px;
 }
 #project6 img {
 	margin-top: 30px;
@@ -109,7 +127,8 @@ div{
 }
 #project8{
 	position: relative;
-	top:10px;
+	top:90px;
+	left: 50px;
 }
 #project8 img {
 	margin-top: 30px;
@@ -121,23 +140,58 @@ div{
 	background-color: transparent;
 	border: 4px solid white;
 }
-.overlap-box:hover{
-	background-color: white;
-	border: 4px solid white;
+.project-list{
+	z-index: 5;
+}
+.close{
+	position: fixed;
+	top: 10px;
+	left: 350px;
+	margin: 0px;
+	color: black;
+	z-index: 3;
+	cursor: pointer;
+	font-size: 65px;
+	font-weight: 700;
+	display: block;
+}
+.title{
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	height: 100vh;
+	width: 400px;
+	overflow-y: scroll;
+	padding: 0px;
+	margin: 0px;
+	z-index: 2;
+}
+.title div{
+	margin: 0 auto;
+	clear: both;
 }
 .text{
-	font-family: 'Space Mono', monospace;
+	font-family: 'Six Caps', sans-serif; /*'Space Mono', monospace;*/
 	font-weight: 700;
-	color: black;
+	font-size: 100px;
+	color: transparent;
 	margin:0px;
 	padding: 0px;
-	line-height: 25px;
+	line-height: 97px;
+	transition: all .2s ease-in-out;
+	width: 0px;
+	text-shadow: 0 0 25px #000;
 }
-#text-right{
+.text-right{
+	position: relative;
+	left: -140px;
+	top: -40px;
 	float: right;
 }
-#text-left{
-	float: left;
+.text-left{
+	position: relative;
+	top: -40px;
+	left: 0px;
 }
 #header div {
     position: fixed;
@@ -155,40 +209,60 @@ a {
 }
 u {
 	text-decoration: none;
-	border-bottom: 3px dotted white;
+	border-bottom: 3px dotted black;
 	padding-bottom: 1.5px;
 }
 u:hover {
 	text-decoration: none;
-	border-bottom: 3px solid white;
+	border-bottom: 3px solid black;
 	padding-bottom: 1.5px;
+	transition: all .2s ease-in-out;
 }
 a:hover {
-		text-decoration: underline;
-		transition: all 0.2s ease-in-out;
+		border-bottom: 3px solid white;
+	}
+nav a:hover {
+		border-bottom: 3px solid black;
 	}
 a:visited {
 		color: white;
 	}
 ::-moz-selection { /* Code for Firefox */
-    color: #fff; 
-    background: black;
+    color: #000; 
+    background: #FF00FF;
 }
 ::selection {
-    color: #fff; 
-    background: black;
+    color: #000; 
+    background: #FF00FF;
 }
+.none{font-weight: 700;}
 .none:hover{text-decoration: none;}
 nav{
+	color: black;
 	font-size: 24px;
 	font-family: 'Work Sans', sans-serif;
 	font-weight: 300;
 	line-height: 34px;
+	display: none;
+}
+nav a{color: black}
+nav a:visited{color: black}
+.show{display: block!important;}
+.hide{display: none;}
+.side-name{
+	display: none;
+	color: black;
+	margin: 7px;
+	font-size: 25px;
+	font-family: 'Six Caps', sans-serif;
+	line-height: 50px;
+	cursor: pointer;
 }
 .info-name{
 	font-weight: 700;
 }
 .info-h1{
+	padding-bottom: 0px;
 	font-weight: 300;
 }
 .list{
@@ -203,27 +277,102 @@ ul li {
 ul ul{
 	margin-left: 20px;
 }
-#project-list{display: none;}
 #wrapper{
 	width:800px;
 	margin: 0 auto;
 	float: none;
 }
 #wrapper img {
-	max-width: 800px;
+	max-width: 785px;
 }
-.arrow a:hover{
+.arrow{
+	border:4px solid yellow;
 	color: yellow;
+}
+.arrow:hover{
+	background-color: yellow;
+	color: black;
 	text-decoration: none;
+	transition: all .2s ease-in-out;
+}
+.end-arrows{
+	position: relative;
+	top: -100px;
+	width: 825px;
+	margin: 0px;
+	padding: 0px;
+}
+#forward{
+	float: right;
+	margin-right: 0px; 
+}
+.go-home{
+	position: fixed;
+	top: 15px;
+	left: 10px;
+}
+.go-home a{
+	text-decoration:none;
+	color: yellow;
+	font-size: 120px;
+}
+.go-home a:hover{
+	text-decoration:none;
+	color: white;
+	border-bottom: 0px;
+	transition: all .2s ease-in-out;
+}
+#side-bar{
+	position: fixed;
+	height: 100vh;
+	width: 400px;
+	top: 0px;
+	left: 0px;
+	margin: 0px;
+	padding: 0px;
+	background-color: yellow;
+	cursor: pointer;
+}
+.project-header{
+	width: 800px;
+	padding: 0px;
+	margin-right: 0px;
+	display: block;
+	clear: both;
+}
+.project-h1{
+	display: inline-block;
+	position: relative;
+	top: 139px;
+	width: 626px;
+	text-align: center;
+	margin: 0px;
+	padding: 0px;
+	color: black;
+	-webkit-text-stroke:4px yellow;
+	font-family: 'Six Caps', sans-serif;
+	font-size: 380px;
+	z-index: -1;
+}
+.description{
+	color: #FFF;
+	text-align: center;
+	text-shadow: 1px 1px 2px #000, 0 0 25px #000, 0 0 5px #000;
+	margin: 10px;
+}
+#info-trigger{
+	cursor: pointer; 
 }
 .info-page{
+	display: none;
 	margin: 0px;
 	padding: 0px;
 }
 .info-page .list{
 	margin-top: 0px;
-	margin-left: 20px;
+	margin-left: 0px;
 	padding-top: 0px; 
+	padding-bottom: 0px; 
 }
 .info-page .none, .info-page .info-h1, .info-page .list{
 	clear: left;
@@ -244,7 +393,7 @@ and (max-device-width : 667px) {
 .description{padding:0px; clear:both; max-width: 95vw; font-size: 20px; line-height: 28px; margin-bottom: 40px;}
 .photos{margin:0px; padding:0px; clear:both; max-width: 100vw;}
 #wrapper img{margin:0px; margin-bottom:-9px; padding:0px; max-width:100vw; height:auto;}
-nav div {margin: 0px;}
+nav div {margin: 10px;}
 #back{clear: both;}
 .info-page .info-h1 {margin: 0px;}
 }

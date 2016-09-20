@@ -8,16 +8,6 @@ $(document).ready(function() {
   			$(".overlap-box", this).css( "background", "transparent" );
   		}
 	);
-
-	$( "#side-bar, .side-name" )
-		.click(function() {
-			$(".projects").addClass('projects-left');
-			$("#side-bar").css( "width", "400px" );
-			$("nav").addClass('show');
-			$(".project-list").addClass('show');
-			$(".close").addClass('show');
-			$(".side-name").removeClass('show');
-	});
 	$( ".close, .projects" )
 		.click(function() {
 			$(".projects").removeClass('projects-left');
@@ -26,6 +16,16 @@ $(document).ready(function() {
 			$(".project-list").removeClass('show');
 			$(".side-name").addClass('show');
 			$(".close").addClass('hide');
+	});
+	$( "#side-bar, .side-name" )
+		.click(function() {
+			$(".projects").addClass('projects-left');
+			$("#side-bar").css( "width", "400px" );
+			$("nav").addClass('show');
+			$(".project-list").addClass('show');
+			$(".side-name").removeClass('show');
+			$(".close").removeClass('hide');
+			$(".close").addClass('show');
 	});
 	$( "#info-trigger" ).on( "click", function() {
 		$(".info-page").toggleClass('show'); 

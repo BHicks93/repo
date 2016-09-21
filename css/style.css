@@ -406,7 +406,7 @@ ul ul{
 @media only screen 
 and (min-device-width : 375px) 
 and (max-device-width : 667px) {
-.projects, #project1, #project2, #project3, #project4, #project5, #project6, #project7, #project8, #header, .close, .end-arrows, .arrow {display: none;}
+.projects, #project1, #project2, #project3, #project4, #project5, #project6, #project7, #project8, #header, .close, .end-arrows, .arrow, .desktop, #side-bar-p, .side-name-p {display: none;}
 #project-list{display: inline-block; margin: 0px;}
 #project-list li:first-child {margin-bottom: 10px;}
 #wrapper{margin: 0px; padding: 0px;}
@@ -423,5 +423,4 @@ nav div {margin: 10px;}
 .mobile-menu li a{color:black;}
 .menu-close{position: absolute; top: 15px; right:20px; font-size: 100px;}
 .mobile{display: block;}
-.desktop{display: none;}
 }

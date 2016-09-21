@@ -27,6 +27,24 @@ $(document).ready(function() {
 			$(".close").removeClass('hide');
 			$(".close").addClass('show');
 	});
+	$( ".close-p" )
+		.click(function() {
+			$("#side-bar-p").css( "width", "40px" );
+			$("nav").removeClass('show');
+			$(".project-list").removeClass('show');
+			$(".side-name-p").removeClass('hide');
+			$(".side-name-p").addClass('show');
+			$(".close-p").addClass('hide');
+	});
+	$( "#side-bar-p, .side-name-p" )
+		.click(function() {
+			$("#side-bar-p").css( "width", "400px" );
+			$("nav").addClass('show');
+			$(".project-list").addClass('show');
+			$(".side-name-p").addClass('hide');
+			$(".close-p").removeClass('hide');
+			$(".close-p").addClass('show');
+	});
 	$( "#info-trigger" ).on( "click", function() {
 		$(".info-page").toggleClass('show'); 
 	});

@@ -155,6 +155,18 @@ div{
 	font-weight: 700;
 	display: block;
 }
+.close-p{
+	position: fixed;
+	top: 10px;
+	left: 350px;
+	margin: 0px;
+	color: black;
+	z-index: 3;
+	cursor: pointer;
+	font-size: 65px;
+	font-weight: 700;
+	display: none;
+}
 .title{
 	position: fixed;
 	top: 0px;
@@ -258,6 +270,15 @@ nav a:visited{color: black}
 	line-height: 50px;
 	cursor: pointer;
 }
+.side-name-p{
+	display: block;
+	color: black;
+	margin: 7px;
+	font-size: 25px;
+	font-family: 'Six Caps', sans-serif;
+	line-height: 50px;
+	cursor: pointer;
+}
 .info-name{
 	font-weight: 700;
 }
@@ -306,26 +327,21 @@ ul ul{
 	float: right;
 	margin-right: 0px; 
 }
-.go-home{
-	position: fixed;
-	top: 15px;
-	left: 10px;
-}
-.go-home a{
-	text-decoration:none;
-	color: yellow;
-	font-size: 120px;
-}
-.go-home a:hover{
-	text-decoration:none;
-	color: white;
-	border-bottom: 0px;
-	transition: all .2s ease-in-out;
-}
 #side-bar{
 	position: fixed;
 	height: 100vh;
 	width: 400px;
+	top: 0px;
+	left: 0px;
+	margin: 0px;
+	padding: 0px;
+	background-color: yellow;
+	cursor: pointer;
+}
+#side-bar-p{
+	position: fixed;
+	height: 100vh;
+	width: 40px;
 	top: 0px;
 	left: 0px;
 	margin: 0px;

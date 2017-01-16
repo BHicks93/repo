@@ -1,11 +1,11 @@
 $(document).ready(function() {
 	$( "#project1, #project2, #project3, #project4, #project5, #project6, #project7, #project8" ).hover(
 		function() {
-  			$(".text", this).css( "color", "white" );
+  			$(".text", this).css({ "color": "white", "text-shadow": "0 0 25px #000"});
   			$(".overlap-box", this).css( "background", "white" );
   		}, function() { 
-  			$(".text", this).css( "color", "transparent" );
-  			$(".overlap-box", this).css( "background", "transparent" );
+  			$(".text", this).css({"color": "transparent", "text-shadow": "none"});
+  			$(".overlap-box", this).css("background", "transparent" );
   		}
 	);
 	$( ".close, .projects" )

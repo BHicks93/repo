@@ -51,7 +51,7 @@ svg{
 	padding: 10px;
 }
 @media (max-width: 599px) {
-	body{font-size: 22px; color:white; overflow: hidden;}
+	body{position:relative; font-size: 22px; color:white; overflow: hidden;}
 	#info-trigger{
 		position: fixed; 
 		top: 0; 
@@ -85,5 +85,11 @@ svg{
 		letter-spacing: 5px;
 	}
 	#email{display: none;}
-	svg{height: 100vh; width: auto; padding-top: 70px;}
+	svg{
+		position: absolute;
+  		top: 50%;
+  		left: 50%;
+  		transform: translate(-50%, -50%);
+  		padding: 0px;
+  		padding-top:600px; }
 	}
